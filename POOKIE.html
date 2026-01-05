@@ -57,7 +57,7 @@
         </label>
         <div class="control-item">
             <span>ZOOM</span>
-            <input type="range" id="zoom" min="0.1" max="3" step="0.01" value="0.5">
+            <input type="range" id="zoom" min="0.025" max="1.5" step="0.01" value="0.05">
         </div>
         <div class="control-item">
             <span>ROTATE</span>
@@ -90,7 +90,7 @@
     hatOverlay.src = "https://raw.githubusercontent.com/KimmiJimmi/justagirl/main/bow.png"; 
 
     let userImage = null;
-    let hatScale = 0.5, hatRotation = 0, hatX = 256, hatY = 200;
+    let hatScale = 0.2, hatRotation = 0, hatX = 256, hatY = 200;
     let isDragging = false, lastX = 0, lastY = 0;
 
     function draw() {
@@ -177,7 +177,7 @@
     downloadBtn.onclick = () => {
         if (!userImage) return alert("Please upload an image first.");
         const link = document.createElement("a");
-        link.download = "trench-pfp.png";
+        link.download = "girl-pfp.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
     };
