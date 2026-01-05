@@ -57,7 +57,7 @@
         </label>
         <div class="control-item">
             <span>ZOOM</span>
-            <input type="range" id="zoom" min="0.025" max="1.5" step="0.01" value="0.05">
+            <input type="range" id="zoom" min="0.1" max="1.5" step="0.01" value="0.5">
         </div>
         <div class="control-item">
             <span>ROTATE</span>
@@ -86,8 +86,8 @@
     const hatOverlay = new Image();
     // Required to allow the canvas to download an image from a different domain (GitHub)
     hatOverlay.crossOrigin = "anonymous"; 
-    // Direct raw link to your hat
-    hatOverlay.src = "https://raw.githubusercontent.com/KimmiJimmi/justagirl/main/bow.png"; 
+    // Direct raw link to your bow
+    hatOverlay.src = "https://raw.githubusercontent.com/KimmiJimmi/justagirl/main/bow.PNG"; 
 
     let userImage = null;
     let hatScale = 0.2, hatRotation = 0, hatX = 256, hatY = 200;
